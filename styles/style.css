@@ -1,50 +1,147 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
-body{
-    font-family: "Inter", sans-serif;
+body {
+    font-family: "Poppins", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
 }
 
-
 /* share style implement */
-.section-heading{
+.container{
+    max-width: 1200px;
+    margin:0px auto;
+}
+.section-heading {
     max-width: 650px;
     margin: 0 auto;
     text-align: center;
 }
-.section-heading *{
+
+.section-heading * {
     margin-bottom: 10px;
 }
-.section-title{
-    font-family:"Inter", sans-serif;
+
+.section-title {
+    font-family: "Inter", sans-serif;
     font-weight: 700;
     font-size: 2.6rem;
     color: #121212;
 }
 
-.description{
+.description {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 1.2rem;
     color: #707070;
 }
 
-.primary-btn{
+.primary-btn {
     background-color: #FF5959;
     color: white;
-    font-family:"Inter", sans-serif;
+    font-family: "Inter", sans-serif;
     font-weight: 600;
     font-size: 1.1rem;
     border-radius: 5px;
     padding: 16px 20px;
     border: none;
+}
+
+/* header style implement */
+
+.header{
+    background-color: #FAFAFA;
+}
+
+/* banner style implement */
+
+.banner-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0px 0px 20px;
+
+   
+}
+.banner-btn{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.banner-btn >p{
+    color: #707070;
+}
+
+.banner-text{
+    width: 40%;
+}
+
+.banner-text *{
+    margin-bottom: 10px;
+}
+.banner-title {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 2.6rem;
+    color: #121212;
+}
+.description {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: #707070;
+}
+.banner-img{
+    width: 58% ;
+}
+
+.banner-container .banner-img img{
+    width: 80%;
+}
+/* footer style Implement */
+.footer {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+/*mobile responsive */
+
+@media screen and (max-width:576px) {
+    .banner-container{
+        flex-direction: column;
+        padding:20px 30px 0px 20px;
+        gap: 50px;
+    }
+    .banner-text{
+        width: 100%;
+    }
+    .banner-img{
+        width: 100% ;
+        padding-left: 50px;
+    }
+    
+}
+
+@media screen and (min-width:576px) and (max-width:992px) {
+    .banner-container{
+        flex-direction: column;
+        padding:20px 30px 0px 20px;
+    }
+    .banner-text{
+        width: 100%;
+        padding: 50px;
+    }
+    .banner-img{
+        width: 100% ;
+        padding-left: 100px;
+    }
 }
