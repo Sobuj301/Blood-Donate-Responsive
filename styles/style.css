@@ -102,6 +102,8 @@ body {
     font-weight: 400;
     font-size: 1.2rem;
     color: #707070;
+    padding: 10px;
+    text-align: center;
 }
 
 .banner-img {
@@ -121,7 +123,9 @@ body {
 
 
 /* donate amount style implement */
-
+.donate-section{
+    margin-bottom: 50px;
+}
 .donate-amount {
     max-width: 600px;
     margin: 20px auto;
@@ -155,6 +159,40 @@ body {
     text-align: center;
     padding: 8px;
     margin-bottom: 14px;
+}
+
+
+/* donate plan style implement */
+
+.donate-plan{
+    display: flex;
+    gap: 20px;
+}
+
+.donate-plan .food{
+    background-color: rgba(79, 157, 166, 0.1);
+}
+.donate-plan .shelter{
+    background-color: rgba(255, 89, 89, 0.1);
+}
+.donate-plan .education{
+    background-color: #FFF4D6;
+}
+.plan{
+    padding: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.plan-title{
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: #121212;
+}
+
+.plan-description{
+    color: #707070;
+    font-weight: 400;
+    font-size: 1rem;
 }
 
 /*mobile responsive */
@@ -192,6 +230,10 @@ body {
         margin-top: 20px;
         margin-bottom: 20px;
     }
+    .donate-plan{
+        flex-direction: column;
+        margin: 20px;
+    }
 
 
 }
@@ -211,6 +253,10 @@ body {
         width: 100%;
         padding-left: 100px;
     }
+    .donate-plan{
+        margin: 20px;
+    }
+   
 }
 
 
