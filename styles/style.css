@@ -191,14 +191,6 @@ body {
     font-size: 1rem;
 }
 
-/* footer style Implement */
-.footer {
-    font-family: "Lobster", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-
 /* featured one style implement */
 
 .featured-one {
@@ -226,6 +218,10 @@ body {
 }
 
 /* subscribe section design */
+
+.update{
+    margin-top: 50px;
+}
 
 .subscribe {
     padding: 50px 100px 50px 100px;
@@ -255,6 +251,29 @@ body {
     color: white;
 }
 
+/* footer style Implement */
+.footer {
+    background-color: #0B0D17;
+    font-weight: 400;
+    font-style: normal;
+    padding: 50px;
+    margin-top: 80px;
+}
+.footer .footer-title{
+    font-family: "Lobster", sans-serif;
+    color: rgba(255, 89, 89, 1);
+    font-weight: 400;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.footer .footer-description{
+    color: #D9DBE1;
+    text-align: center;
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+
 /*mobile responsive */
 
 @media screen and (max-width:576px) {
@@ -263,6 +282,7 @@ body {
         padding: 20px 30px 0px 20px;
         gap: 50px;
     }
+
 
     .banner-text {
         width: 100%;
@@ -334,7 +354,12 @@ body {
         border-radius: 5px;
     }
 
+    .footer{
+        margin-top: 20px;
+    }
+
 }
+
 
 
 @media screen and (min-width:576px) and (max-width:992px) {
@@ -361,9 +386,4 @@ body {
         margin: 20px;
     }
 
-}
-
-
-.border {
-    border: 2px solid black;
 }
